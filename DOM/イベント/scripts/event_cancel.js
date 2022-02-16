@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // <a id="inner">要素のclickイベントリスナー
   document.getElementById('inner').addEventListener('click', function(e){
     window.alert('#innerリスナーが発生しました。');
-    e.stopPropagation();
+    // e.stopPropagation();
+    // e.stopImmediatePropagation();
+    e.preventDefault();
   }, false);
 
   document.getElementById('inner').addEventListener('click', function(e) {
